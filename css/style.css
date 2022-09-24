@@ -1,0 +1,93 @@
+*{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2rem;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+/* header */
+.Portada{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: url(../img/IMG_0058.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.textos-header{
+    text-align: center;
+    padding: 10%;
+    font-weight: bold;
+    color: #fff;
+}
+.info-header{
+    padding: 10%;
+    background-color: #95613A;
+    text-align: center;
+    color:#fff;
+}
+.title-header{
+    padding: 2%;
+    font-weight: bold;
+}
+.text-header{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+/* Grid del botón */
+.item1{
+grid-area: a;
+text-align: center;
+padding: 10%;
+color: #fff;
+}
+.item2{
+  grid-area: b;
+  text-align: center;
+  margin: auto;
+  padding: 5%;
+}
+.img-button{
+    width: 300px;
+    height: 300px;
+}
+.button-button{
+    margin: 5%;
+    background-color: #95613A;
+    border: none;
+}
+.button-header{
+    display: grid;
+    padding: 10%;
+    background-color: #FFAC25;
+    grid-template:
+    "a"
+    "b";
+}
+@media (min-width:600px){
+    .button-header{
+        grid-template:
+        "a b";
+    }
+    .item1{
+        width: 500px;
+    }
+}
+/* productos */
+.title-pruducts{
+    text-align: center;
+    background-color: #95613A;
+    font-weight: bold;
+    padding: 5%;
+}
+.products{
+    display: grid;
+    text-align: center;
+    background-color: #95613A;
+    gap: 5%;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+}
