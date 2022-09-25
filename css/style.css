@@ -6,12 +6,24 @@ img{
     width: 50px;
     height: 50px;
 }
+/* nav */
+.navv{
+    background-color: #FFAC25;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item a{
+    color:#fff;
+}
+.nav-link{
+    color: #95613A;
+}
 /* header */
 .Portada{
     width: 100%;
     height: 400px;
     position: relative;
-    background: url(../img/IMG_0058.JPG);
+    background: url(../img/panela-home.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -21,6 +33,7 @@ img{
     padding: 10%;
     font-weight: bold;
     color: #fff;
+    font-size: 10%;
 }
 .info-header{
     padding: 10%;
@@ -58,10 +71,12 @@ color: #fff;
     margin: 5%;
     background-color: #95613A;
     border: none;
+    font-weight: bold;
+    font-size: 2rem;
 }
 .button-header{
     display: grid;
-    padding: 10%;
+    padding: 5%;
     background-color: #FFAC25;
     grid-template:
     "a"
@@ -81,13 +96,37 @@ color: #fff;
     text-align: center;
     background-color: #95613A;
     font-weight: bold;
-    padding: 5%;
+    padding-top: 5%;
+    font-size: 2.5rem;
 }
 .products{
     display: grid;
     text-align: center;
+    padding: 5%;
     background-color: #95613A;
     gap: 5%;
-    grid-auto-rows: 25rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+    /* grid-auto-rows: 25rem; */
+    grid-template-columns: repeat(auto-fill, minmax(14rem,1fr));
+}
+.card-img-top{
+    width: 200px;
+    height: 200px;
+}
+/* carrucel */
+/* footer */
+.footer-footer{
+    background-color: #FFAC25;
+    text-align: center;
+    padding: 1%;
+    color: #fff;
+}
+.img-footer{
+    width: 200px;
+    height: 200px;
+    padding: 2%;
+}
+.icon{
+    font-size: 2rem;
+    padding: 3%;
+    color:#fff;
 }
